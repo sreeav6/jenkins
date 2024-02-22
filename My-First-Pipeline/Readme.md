@@ -21,7 +21,7 @@ Second we will be installing
     sudo apt-get update
     sudo apt-get install jenkins
 
-  c) By default, Jenkins will not be accessible to the external world due to the inbound traffic restriction by AWS. Open         port 8080 in the inbound traffic rules as show below.
+  c) By default, Jenkins will not be accessible to the external world due to the inbound traffic restriction by AWS.Openport 8080 in the inbound traffic rules as show below.
       EC2 > Instances > Click on
       In the bottom tabs -> Click on Security Security groups
       Add inbound traffic rules as shown in the image (you can just allow TCP 8080 as well, in my case, I allowed All    traffic)
@@ -30,8 +30,7 @@ Second we will be installing
       http://:8080 [You can get the ec2-instance-public-ip-address from your AWS EC2 console page]
 
   e)  Now you need to unlock the jenkins
-      Run the command to copy the Jenkins Admin Password - sudo cat /var/lib/jenkins/secrets/initialAdminPassword - Enter          the Administrator password
-      https://user-images.githubusercontent.com/43399466/215959008-3ebca431-1f14-4d81-9f12-6bb232bfbee3.png
+      Run the command to copy the Jenkins Admin Password - sudo cat /var/lib/jenkins/secrets/initialAdminPassword - Enter the Administrator password
       
 
 
