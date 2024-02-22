@@ -33,7 +33,9 @@ Second we will be installing Java and Jenkins
       http://:8080 [You can get the ec2-instance-public-ip-address from your AWS EC2 console page]
 
   e)  Now you need to unlock the jenkins
-      Run the command to copy the Jenkins Admin Password - sudo cat /var/lib/jenkins/secrets/initialAdminPassword - Enter the Administrator password
+      Run the command to copy the Jenkins Admin Password - 
+      
+      sudo cat /var/lib/jenkins/secrets/initialAdminPassword - Enter the Administrator password
 
   f) As we are using docker as a agent we have to install docker pipeline as a pulgin in jenkins
   
