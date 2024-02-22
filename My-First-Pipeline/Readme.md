@@ -43,8 +43,8 @@ Second we will be installing Java and Jenkins
     	5. Restart jenkins after pulgin is installed
   	6. Wait for the jenkins to be restarted
    
-   g) Now we will do Docker Slave configuration
-   	Run the below commands in your EC2 instance
+   g) Now we will do Docker Slave configuration, Run the below commands in your EC2 instance
+   
 	sudo apt update
 	sudo apt install docker.io
  
