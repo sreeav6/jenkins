@@ -34,6 +34,30 @@ Second we will be installing Java and Jenkins
 
   e)  Now you need to unlock the jenkins
       Run the command to copy the Jenkins Admin Password - sudo cat /var/lib/jenkins/secrets/initialAdminPassword - Enter the Administrator password
+
+  f) As we are using docker as a agent we have to install docker pipeline as a pulgin in jenkins
+	1. Login into Jenkins
+ 	2. Click on Manage jenkins and then click on Manage pulgins 
+  	3. In the Avaliable pulgins search for Docker Pipeline
+   	4. Select the Docker pipeline pulgin and click on install
+    	5. Restart jenkins after pulgin is installed
+  	6. Wait for the jenkins to be restarted
+   
+   g) Now we will do Docker Slave configuration
+   	Run the below commands in your EC2 instance
+
+     	sudo apt update
+	sudo apt install docker.io
+ 
+   h) We will grant the ubuntu user and jenkins user permission to docker deamon
+
+        sudo su - 
+	usermod -aG docker jenkins
+	usermod -aG docker ubuntu
+	systemctl restart docker
+
+   i) Once you are done with the above steps, it is better to restart Jenkins.
+  	http://<ec2-instance-public-ip>:8080/restart
       
 
 
