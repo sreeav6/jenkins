@@ -37,10 +37,15 @@ Second we will be installing Java and Jenkins
 
   f) As we are using docker as a agent we have to install docker pipeline as a pulgin in jenkins
 	1. Login into Jenkins
+ 
  	2. Click on Manage jenkins and then click on Manage pulgins 
+  
   	3. In the Avaliable pulgins search for Docker Pipeline
+   
    	4. Select the Docker pipeline pulgin and click on install
+    
     	5. Restart jenkins after pulgin is installed
+     
   	6. Wait for the jenkins to be restarted
    
    g) Now we will do Docker Slave configuration, Run the below commands in your EC2 instance
