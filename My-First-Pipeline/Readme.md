@@ -45,8 +45,7 @@ Second we will be installing Java and Jenkins
    
    g) Now we will do Docker Slave configuration
    	Run the below commands in your EC2 instance
-
-     	sudo apt update
+	sudo apt update
 	sudo apt install docker.io
  
    h) We will grant the ubuntu user and jenkins user permission to docker deamon
@@ -57,6 +56,7 @@ Second we will be installing Java and Jenkins
 	systemctl restart docker
 
    i) Once you are done with the above steps, it is better to restart Jenkins.
+   
   	http://<ec2-instance-public-ip>:8080/restart
       
 
