@@ -3,16 +3,19 @@ First launch AWS console
   a) Spin up the free tier t2.micro instance 
   b) Once it is in running state connect to that instance
 
-Second we will be installing 
----------------------------------------
+Second we will be installing Java and Jenkins
+----------------------------------------------
   a) We will installing pre-requisities for Jenkins that is java jdk
   Install Java:
+  
     sudo apt update
     sudo apt install openjdk-11-jre
+	
   Verify Java is installed or not
-    java -version
+  	java -version
     
   b) We will installing Jenkins now
+  
     curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo tee \
     /usr/share/keyrings/jenkins-keyring.asc > /dev/null
     echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
