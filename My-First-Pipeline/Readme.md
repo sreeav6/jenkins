@@ -50,8 +50,8 @@ Second we will be installing Java and Jenkins
 	sudo apt install docker.io
  
    h) We will grant the ubuntu user and jenkins user permission to docker deamon
-
-        sudo su - 
+	
+ 	sudo su - 
 	usermod -aG docker jenkins
 	usermod -aG docker ubuntu
 	systemctl restart docker
